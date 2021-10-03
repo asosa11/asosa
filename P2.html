@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Antonio Sosa's Project 1</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+	</head>
+	<style>
+		body {
+		  font-family: Arial;
+		  margin: 0;
+		}
+		
+		* {
+		  box-sizing: border-box;
+		}
+		
+		img {
+		  vertical-align: middle;
+		}
+		
+		/* Position the image container (needed to position the left and right arrows) */
+		.container {
+		  position: relative;
+		}
+		
+		/* Hide the images by default */
+		.mySlides {
+		  display: none;
+		}
+		
+		/* Add a pointer when hovering over the thumbnail images */
+		.cursor {
+		  cursor: pointer;
+		}
+		
+		/* Next & previous buttons */
+		.prev,
+		.next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 40%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -50px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 20px;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		  -webkit-user-select: none;
+		}
+		
+		/* Position the "next button" to the right */
+		.next {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+		
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover,
+		.next:hover {
+		  background-color: rgba(0, 0, 0, 0.8);
+		}
+		
+		/* Number text (1/3 etc) */
+		.numbertext {
+		  color: #f2f2f2;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 0;
+		}
+		
+		/* Container for image text */
+		.caption-container {
+		  text-align: center;
+		  background-color: #222;
+		  padding: 2px 16px;
+		  color: white;
+		}
+		
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+		
+		/* Six columns side by side */
+		.column {
+		  float: left;
+		  width: 12%;
+		}
+		
+		/* Add a transparency effect for thumnbail images */
+		.demo {
+		  opacity: 0.6;
+		}
+		
+		.active,
+		.demo:hover {
+		  opacity: 1;
+		}
+	</style>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Antonio Sosa</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html" class="active">Project 2</a></li>
+						<li><a href="elements.html">Elements</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Data Visualization</h1>
+							
+							<!-- Carrousel -->
+
+							<div class="container">
+							<div class="mySlides">
+								<div class="numbertext">1 / 6</div>
+								<img src="images/Vis1.jpeg" style="width:100%">
+							</div>
+							
+							<div class="mySlides">
+								<div class="numbertext">2 / 6</div>
+								<img src="images/Vis2.jpeg" style="width:100%">
+							</div>
+							
+							<div class="mySlides">
+								<div class="numbertext">3 / 6</div>
+								<img src="images/Vis3.jpeg" style="width:100%">
+							</div>
+								
+							<div class="mySlides">
+								<div class="numbertext">4 / 6</div>
+								<img src="images/Vis4.jpeg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">5 / 6</div>
+								<img src="images/Vis5.jpeg" style="width:100%">
+							</div>
+							<div class="mySlides">
+								<div class="numbertext">6 / 6</div>
+								<img src="images/Vis6.jpeg" style="width:100%">
+							</div>
+								
+							<a class="prev" onclick="plusSlides(-1)">❮</a>
+							<a class="next" onclick="plusSlides(1)">❯</a>
+							
+							<div class="caption-container">
+								<p id="caption"></p>
+							</div>
+							
+							<div class="row">
+								<div class="column">
+								<img class="demo cursor" src="images/Vis1.jpeg" style="width:100%" onclick="currentSlide(1)" alt="I. Tableau">
+								</div>
+								<div class="column">
+								<img class="demo cursor" src="images/Vis2.jpeg" style="width:100%" onclick="currentSlide(2)" alt="II. Excel">
+								</div>
+								<div class="column">
+								<img class="demo cursor" src="images/Vis3.jpeg" style="width:100%" onclick="currentSlide(3)" alt="III. Tableau">
+								</div>
+								<div class="column">
+								<img class="demo cursor" src="images/Vis4.jpeg"style="width:100%" onclick="currentSlide(4)" alt="IV. Tableau">
+								</div>
+								<div class="column">
+								<img class="demo cursor" src="images/Vis5.jpeg"style="width:100%" onclick="currentSlide(5)" alt="IV. Python, Plotly, Dash">
+								</div>
+								<div class="column">
+								<img class="demo cursor" src="images/Vis6.jpeg"style="width:100%" onclick="currentSlide(6)" alt="IV. Python, Plotly, Dash">
+								</div>
+							</div>
+							</div>
+							<p></p>
+							<p>This is a complilation of different data visualization tasks that I performed for work and school projects.</p>
+							<p>
+								The data used for these visuals were retrieved from the following sites:
+								<ul>
+									<li>https://www.census.gov/quickfacts/fact/table/US/PST045219</li>
+									<li>https://www.bea.gov/data</li>
+									<li>https://github.com/CSSEGISandData/COVID-19</li>
+									<li>https://www.bls.gov/data/tools.htm</li>
+								</ul>
+							</p>
+							<p>The tools used to create the visuals are Tableau, Python (Plotly and Dash), and Excel.
+								Some of them retrieved the data from a data base connected through an API,
+							others had to take the data directly from a .csv file, or would download the .csv file from 
+							the corresponding website and then use it in the program. </p>
+						</div>
+					</section>
+
+			</div>
+		
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+				
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+				
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("demo");
+				  var captionText = document.getElementById("caption");
+				  if (n > slides.length) {slideIndex = 1}
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";
+				  dots[slideIndex-1].className += " active";
+				  captionText.innerHTML = dots[slideIndex-1].alt;
+				}
+			</script>
+
+	</body>
+</html>
